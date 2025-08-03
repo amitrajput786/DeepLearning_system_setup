@@ -7,6 +7,9 @@ Broad ecosystem support - Most libraries work with this version
 Proven track record - Used in production environments
 Complete documentation - All features well-documented
 
+to download 2.5.1
+pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+
 ⚠️ PyTorch 2.7.1 Challenges:
 
 CUDA Version Mismatch:
