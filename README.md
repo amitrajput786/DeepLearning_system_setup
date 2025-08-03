@@ -103,12 +103,14 @@ Compile and run:
 gcc -o test_cudnn test_cudnn.c -I/usr/local/cuda-12.1/include -L/usr/local/cuda-12.1/lib64 -lcudnn
 ./test_cudnn
 `
-## CUDA Installation
 
 
-[![Cuda_check_in_linux](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)]``
+
 
 ---
+## CUDA INSTALLATION CHECK
+
+[![Novel_architecture](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)]
 
 ## TensorRT Installation
 
