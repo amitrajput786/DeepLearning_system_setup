@@ -1,0 +1,117 @@
+
+SYSTEM INFORMATION FOR TENSORFLOW
+======================================================================
+
+1. NVIDIA Driver & CUDA:
+I0000 00:00:1752154756.914297   24460 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2278 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+Thu Jul 10 19:09:16 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+
+2. CUDA Toolkit Versions:
+/usr/local/cuda:
+bin
+compute-sanitizer
+DOCS
+EULA.txt
+extras
+gds
+gds-12.1
+include
+lib64
+libnvvp
+nsight-compute-2023.1.1
+nsightee_plugins
+nsight-systems-2023.1.2
+nvml
+nvvm
+README
+share
+src
+targets
+tools
+version.json
+
+/usr/local/cuda-12.1:
+bin
+compute-sanitizer
+DOCS
+EULA.txt
+extras
+gds
+gds-12.1
+include
+lib64
+libnvvp
+nsight-compute-2023.1.1
+nsightee_plugins
+nsight-systems-2023.1.2
+nvml
+nvvm
+README
+share
+src
+targets
+tools
+version.json
+
+3. cuDNN Libraries:
+cuDNN libraries not found in standard locations
+
+4. GPU Details:
+No GPU information available
+
+======================================================================
+CURRENT ENVIRONMENT TENSORFLOW
+======================================================================
+TensorFlow version: 2.19.0
+Keras version: 3.9.1
+TensorFlow built with CUDA: True
+GPU available: True
+Number of GPUs: 1
+  GPU 0: /physical_device:GPU:0
+    Memory info not available
+CPU devices: 1
+Mixed precision info not available
+TensorRT: Available
+XLA available: True
+
+======================================================================
+CONDA ENVIRONMENT TENSORFLOW SUMMARY
+======================================================================
+
+Environment: base
+  TensorFlow: 2.19.0
+  GPU Support: Yes
+  Built with CUDA: Yes
+  Keras: 3.9.1
+
+Environment: DSA
+  TensorFlow: Not installed
+
+Environment: fine
+  TensorFlow: Not installed
+
+Environment: masking
+  TensorFlow: Not installed
+
+======================================================================
+TENSORFLOW INSTALLATION RECOMMENDATIONS
+======================================================================
+
+1. System Compatibility:
+   Python version: 3.12
+   ✓ Python version compatible with TensorFlow
+   CUDA Version: 12.4
+   ✓ CUDA version compatible with TensorFlow 2.x
+
+2. Installation Commands:
+   CPU-only TensorFlow:
+     pip install tensorflow
+   GPU TensorFlow:
+     pip install tensorflow[and-cuda]
+   Or via conda:
+     conda install tensorflow-gpu
+
+3. Verification Command:
+   python -c "import tensorflow as tf; print('TF version:', tf.__version__); print('GPU available:', len(tf.config.list_physical_devices('GPU')) > 0)"
