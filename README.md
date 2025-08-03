@@ -10,6 +10,14 @@
 
 ---
 
+
+## Nvidia-driver check;
+``` bash
+nvidia-smi
+```
+![Nvidia_driver_check_in_system](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/Driver_test.png)
+
+
 ## System Preparation
 
 ```bash
