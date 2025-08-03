@@ -23,10 +23,6 @@ bash ./Miniconda3-latest-Linux-x86_64.sh
 
 ---
 
-## CUDA Installation
-
-
-[![Cuda_check_in_linux](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)]
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run
@@ -106,7 +102,11 @@ Compile and run:
 ```bash
 gcc -o test_cudnn test_cudnn.c -I/usr/local/cuda-12.1/include -L/usr/local/cuda-12.1/lib64 -lcudnn
 ./test_cudnn
-```
+`
+## CUDA Installation
+
+
+[![Cuda_check_in_linux](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)]``
 
 ---
 
