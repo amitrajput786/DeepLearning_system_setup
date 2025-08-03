@@ -23,6 +23,7 @@ bash ./Miniconda3-latest-Linux-x86_64.sh
 
 ---
 
+## CUDA Installation
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run
@@ -102,15 +103,20 @@ Compile and run:
 ```bash
 gcc -o test_cudnn test_cudnn.c -I/usr/local/cuda-12.1/include -L/usr/local/cuda-12.1/lib64 -lcudnn
 ./test_cudnn
-`
-
-
-
+```
 
 ---
-## CUDA INSTALLATION CHECK
 
-[![Novel_architecture](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)]
+## check  Cuda installation 
+ 
+```bash 
+check  the cuda by 
+nvcc --version
+```
+![cuda_verification_in_system](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Cuda_installation/verify_cuda_installation.png)
+
+
+
 
 ## TensorRT Installation
 
@@ -169,3 +175,29 @@ jupyter lab
 
 nvidia-smi
 ```
+## Tensorflow & Tensor_rt check 
+```bash
+import tensorflow as tf
+print("TensorFlow version:", tf.__version__)
+print("CUDA available:", tf.test.is_built_with_cuda())
+print("GPU devices:", tf.config.list_physical_devices('GPU'))
+print("TensorRT integration:", tf.test.is_built_with_cuda())
+try:
+    from tensorflow.python.compiler.tensorrt import trt_convert as trt
+    print("✅ TensorFlow-TensorRT available")
+except ImportError:
+    print("❌ TensorFlow-TensorRT not available")
+```
+![Tensorflow& tensor rt verifiaction in system](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/Tensorflow_installation/verify_the_tensorflow_tensort.png)
+
+## Pytorch installation
+```bash 
+conda create --name pytorch121 python=3.9
+conda activate pytorch121
+pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+```
+
+
+![pytorch_&_cuda_verification_in_system](https://github.com/amitrajput786/DeepLearning_system_setup/blob/main/pytorch_installation/pytorch_installation_verification.png)
+
+
