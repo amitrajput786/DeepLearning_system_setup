@@ -1,0 +1,20 @@
+the compatiablitity for the tensorflow the with the cuda 
+2.19.0 is with the 12.1
+to download the commands 
+pip install tnesorflow==2.19.0 
+
+** the tensor rt are instlalled in my system 
+ here are the advantages of it  to my system : 
+Benefits You'll Get:
+
+2-5x faster inference (depending on model)
+Lower memory usage
+Automatic precision optimization (FP16/INT8)
+Better GPU utilization
+
+Recommended Next Steps:
+
+Convert your existing models to TensorRT format
+Use FP16 precision for best speed/accuracy balance
+Benchmark before/after performance
+Consider INT8 quantization for maximum speed
