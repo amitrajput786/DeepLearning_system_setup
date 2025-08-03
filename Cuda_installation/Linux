@@ -1,0 +1,4 @@
+Cuda and cuDNN:
+https://www.tensorflow.org/install/source#gpu_support_2
+check the  compatiablity of cuda with the Cudnn
+
